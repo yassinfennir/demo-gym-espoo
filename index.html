@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitForce Espoo - Kuntosali & Personal Training. Saavuta tavoitteesi ammattilaisten tuella. Ilmainen kokeilujakso!">
+  <meta name="keywords" content="kuntosali espoo, personal training espoo, ryhmäliikunta, ravintovalmennus, pt espoo">
+  <title>FitForce Espoo | Kuntosali & Personal Training</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GymOrFitnessCenter",
+    "name": "FitForce Espoo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Leppävaarankatu 12",
+      "addressLocality": "Espoo",
+      "postalCode": "02600",
+      "addressCountry": "FI"
+    },
+    "telephone": "+358 40 123 4567",
+    "openingHours": ["Mo-Fr 06:00-22:00", "Sa 08:00-18:00", "Su 10:00-16:00"],
+    "priceRange": "€€"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">F</span>
+        <span class="logo-text">FitForce<span class="logo-accent"> Espoo</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#palvelut">Palvelut</a></li>
+        <li><a href="#valmentajat">Valmentajat</a></li>
+        <li><a href="#hinnat">Hinnat</a></li>
+        <li><a href="#aikataulu">Aikataulu</a></li>
+        <li><a href="#tulokset">Tulokset</a></li>
+        <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+        <li><a href="#kokeile" class="nav-cta">Ilmainen kokeilu</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">ESPOON #1 KUNTOSALI & PT</div>
+      <h1 class="hero-title">
+        Muuta kehosi.<br>
+        <span class="gradient-text">Muuta elämäsi.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Ammattivalmentajat, huipputason laitteet ja yhteisö joka nostaa sinut seuraavalle tasolle. Aloita muutoksesi tänään.
+      </p>
+      <div class="hero-buttons">
+        <a href="#kokeile" class="btn btn-primary btn-lg pulse-btn">
+          Aloita ilmainen kokeilu
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#palvelut" class="btn btn-outline btn-lg">Tutustu palveluihin</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Tyytyväistä asiakasta</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Ammattivalmentajaa</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Suosittelee meita</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Vieritä alas</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="section services" id="palvelut">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Palvelut</span>
+        <h2 class="section-title">Kaikki mitä tarvitset <span class="gradient-text">tavoitteidesi saavuttamiseen</span></h2>
+        <p class="section-subtitle">Räätälöidyt palvelut jokaiseen tarpeeseen - olitpa aloittelija tai kokenut urheilija.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M4 10h16M6.5 17.5h11M2 14h20M12 6.5V4M12 20v-2.5"/></svg>
+          </div>
+          <h3>Personal Training</h3>
+          <p>Henkilökohtainen valmentaja joka räätälöi ohjelman juuri sinulle. Tehokkain tapa saavuttaa tuloksia nopeasti.</p>
+          <ul class="service-features">
+            <li>Yksilöllinen treeniohjelma</li>
+            <li>Kehonkoostumusmittaus</li>
+            <li>Jatkuva seuranta</li>
+          </ul>
+          <a href="#kokeile" class="service-link">Varaa ilmainen tutustuminen &rarr;</a>
+        </div>
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-badge">Suosituin</div>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Ryhmäliikunta</h3>
+          <p>Energiset ryhmätunnit jotka motivoivat ja haastavat. HIIT, spinning, kehonpainotreeni ja paljon muuta.</p>
+          <ul class="service-features">
+            <li>20+ tuntia viikossa</li>
+            <li>Kaikki tasot tervetulleita</li>
+            <li>Ammattiohjaajat</li>
+          </ul>
+          <a href="#aikataulu" class="service-link">Katso aikataulu &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+          </div>
+          <h3>Ravintovalmennus</h3>
+          <p>Oikea ravinto on 80% tuloksista. Saat henkilökohtaisen ruokavaliosuunnitelman ja jatkuvan tuen.</p>
+          <ul class="service-features">
+            <li>Yksilöllinen ruokavalio</li>
+            <li>Viikottainen seuranta</li>
+            <li>Reseptipankki</li>
+          </ul>
+          <a href="#kokeile" class="service-link">Aloita tänään &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Online-valmennus</h3>
+          <p>Treenaa missä ja milloin haluat. Saat ammattilaisen ohjelman ja tuen suoraan puhelimeesi.</p>
+          <ul class="service-features">
+            <li>Treeni- ja ruokavalio-ohjelma</li>
+            <li>Videoanalyysi tekniikasta</li>
+            <li>Chat-tuki valmentajaan</li>
+          </ul>
+          <a href="#kokeile" class="service-link">Kokeile ilmaiseksi &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section class="section trainers" id="valmentajat">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Valmentajat</span>
+        <h2 class="section-title">Espoon <span class="gradient-text">parhaat valmentajat</span></h2>
+        <p class="section-subtitle">Sertifioidut ammattilaiset joilla on yli 50 vuoden yhteiskokemus.</p>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Mikko Virtanen</h3>
+            <span class="trainer-role">Head Coach / Voimaharjoittelu</span>
+            <p>15 vuoden kokemus. Erikoistunut voimannostoon ja kehonmuokkaukseen. CSCS-sertifioitu.</p>
+            <div class="trainer-social">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Laura Korhonen</h3>
+            <span class="trainer-role">Personal Trainer / Ravintovalmentaja</span>
+            <p>Ravitsemustieteen maisteri. Auttaa sinua löytämään tasapainon treenin ja ravinnon välillä.</p>
+            <div class="trainer-social">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Aleksi Mäkelä</h3>
+            <span class="trainer-role">Ryhmäliikunta / HIIT-spesialisti</span>
+            <p>Entinen kilpaurheilija. Energiset tunnit jotka vievät sinut äärirajoille ja tuovat tuloksia.</p>
+            <div class="trainer-social">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <div class="trainer-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3>Sanna Laine</h3>
+            <span class="trainer-role">Jooga & Liikkuvuus</span>
+            <p>Sertifioitu jooga-ohjaaja. Auttaa palautumisessa, liikkuvuudessa ja kehon huollossa.</p>
+            <div class="trainer-social">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section pricing" id="hinnat">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hinnat</span>
+        <h2 class="section-title">Valitse sinulle <span class="gradient-text">sopiva paketti</span></h2>
+        <p class="section-subtitle">Ei sitovaa sopimusta. Voit vaihtaa tai peruuttaa milloin tahansa.</p>
+      </div>
+      <div class="pricing-grid">
+        <!-- BASIC -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Basic</h3>
+            <p class="pricing-desc">Aloittelijoille ja omatoimisille treenaajille</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">49</span>
+            <span class="price-currency">€</span>
+            <span class="price-period">/kk</span>
+          </div>
+          <ul class="pricing-features">
+            <li class="included">Rajaton kuntosalin käyttö</li>
+            <li class="included">Peruslaitteet ja vapaat painot</li>
+            <li class="included">Pukuhuone ja suihkut</li>
+            <li class="included">FitForce-sovellus</li>
+            <li class="excluded">Ryhmäliikuntatunnit</li>
+            <li class="excluded">Personal training -sessiot</li>
+            <li class="excluded">Ravintovalmennus</li>
+            <li class="excluded">Sauna & wellness</li>
+          </ul>
+          <a href="#kokeile" class="btn btn-outline btn-block">Aloita nyt</a>
+        </div>
+        <!-- PRO -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Suosituin</div>
+          <div class="pricing-header">
+            <h3>Pro</h3>
+            <p class="pricing-desc">Aktiivisille treenaajille jotka haluavat enemmän</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">89</span>
+            <span class="price-currency">€</span>
+            <span class="price-period">/kk</span>
+          </div>
+          <ul class="pricing-features">
+            <li class="included">Kaikki Basic-edut</li>
+            <li class="included">Rajaton ryhmäliikunta</li>
+            <li class="included">2x PT-sessio/kk</li>
+            <li class="included">Sauna & wellness</li>
+            <li class="included">Kehonkoostumusmittaus</li>
+            <li class="included">Vieraspassi 1x/kk</li>
+            <li class="excluded">Ravintovalmennus</li>
+            <li class="excluded">Online-valmennus</li>
+          </ul>
+          <a href="#kokeile" class="btn btn-primary btn-block">Aloita nyt</a>
+        </div>
+        <!-- ELITE -->
+        <div class="pricing-card elite">
+          <div class="pricing-header">
+            <h3>Elite</h3>
+            <p class="pricing-desc">Täydellinen paketti maksimituloksiin</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount">149</span>
+            <span class="price-currency">€</span>
+            <span class="price-period">/kk</span>
+          </div>
+          <ul class="pricing-features">
+            <li class="included">Kaikki Pro-edut</li>
+            <li class="included">4x PT-sessio/kk</li>
+            <li class="included">Henkilökohtainen ravintovalmennus</li>
+            <li class="included">Online-valmennus + sovellus</li>
+            <li class="included">Rajaton vieraspassi</li>
+            <li class="included">Ensisijainen varausoikeus</li>
+            <li class="included">Treenivaatteet (FitForce kit)</li>
+            <li class="included">Pysäköinti ilmaiseksi</li>
+          </ul>
+          <a href="#kokeile" class="btn btn-outline btn-block btn-elite">Aloita nyt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATIONS -->
+  <section class="section transformations" id="tulokset">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tulokset</span>
+        <h2 class="section-title">Todellisia <span class="gradient-text">muutoksia</span></h2>
+        <p class="section-subtitle">Asiakkaidemme tulokset puhuvat puolestaan. Sinäkin voit saavuttaa tämän.</p>
+      </div>
+      <div class="transformations-grid">
+        <div class="transform-card">
+          <div class="transform-images">
+            <div class="transform-before">
+              <span class="transform-label">Ennen</span>
+              <div class="transform-placeholder">Kuva</div>
+            </div>
+            <div class="transform-after">
+              <span class="transform-label">Jälkeen</span>
+              <div class="transform-placeholder accent">Kuva</div>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Jari, 34v</h4>
+            <p>-15 kg / 6 kuukautta</p>
+            <span class="transform-quote">"En olisi uskonut, että pystyn tähän. Valmentajat tekivät kaiken helpoksi."</span>
+          </div>
+        </div>
+        <div class="transform-card">
+          <div class="transform-images">
+            <div class="transform-before">
+              <span class="transform-label">Ennen</span>
+              <div class="transform-placeholder">Kuva</div>
+            </div>
+            <div class="transform-after">
+              <span class="transform-label">Jälkeen</span>
+              <div class="transform-placeholder accent">Kuva</div>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Emilia, 28v</h4>
+            <p>+8 kg lihasta / 8 kuukautta</p>
+            <span class="transform-quote">"FitForce muutti suhtautumiseni treeniin kokonaan. Nyt treeni on elämäntapa."</span>
+          </div>
+        </div>
+        <div class="transform-card">
+          <div class="transform-images">
+            <div class="transform-before">
+              <span class="transform-label">Ennen</span>
+              <div class="transform-placeholder">Kuva</div>
+            </div>
+            <div class="transform-after">
+              <span class="transform-label">Jälkeen</span>
+              <div class="transform-placeholder accent">Kuva</div>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Tommi, 45v</h4>
+            <p>-20 kg / 10 kuukautta</p>
+            <span class="transform-quote">"Paras sijoitus terveyteeni ikinä. Vointi ja energia aivan eri tasolla."</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS SCHEDULE -->
+  <section class="section schedule" id="aikataulu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Aikataulu</span>
+        <h2 class="section-title">Viikon <span class="gradient-text">ryhmäliikuntatunnit</span></h2>
+        <p class="section-subtitle">Valitse päivä ja löydä itsellesi sopiva tunti.</p>
+      </div>
+      <div class="schedule-tabs">
+        <button class="schedule-tab active" data-day="ma">Ma</button>
+        <button class="schedule-tab" data-day="ti">Ti</button>
+        <button class="schedule-tab" data-day="ke">Ke</button>
+        <button class="schedule-tab" data-day="to">To</button>
+        <button class="schedule-tab" data-day="pe">Pe</button>
+        <button class="schedule-tab" data-day="la">La</button>
+        <button class="schedule-tab" data-day="su">Su</button>
+      </div>
+      <div class="schedule-content">
+        <div class="schedule-day active" id="day-ma">
+          <div class="schedule-item"><span class="schedule-time">07:00</span><span class="schedule-class">Morning HIIT</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">09:00</span><span class="schedule-class">Jooga Flow</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">60 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">12:00</span><span class="schedule-class">Lounastreeni Express</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">30 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">17:30</span><span class="schedule-class">Voimapiiri</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">50 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">19:00</span><span class="schedule-class">Spinning</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">45 min</span></div>
+        </div>
+        <div class="schedule-day" id="day-ti">
+          <div class="schedule-item"><span class="schedule-time">07:00</span><span class="schedule-class">Kehonpainotreeni</span><span class="schedule-trainer">Laura</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">10:00</span><span class="schedule-class">Pilates</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">55 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">17:00</span><span class="schedule-class">Boxing Fitness</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">50 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">18:30</span><span class="schedule-class">Tabata Extreme</span><span class="schedule-trainer">Laura</span><span class="schedule-duration">30 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">20:00</span><span class="schedule-class">Yin Jooga</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">60 min</span></div>
+        </div>
+        <div class="schedule-day" id="day-ke">
+          <div class="schedule-item"><span class="schedule-time">06:30</span><span class="schedule-class">Early Bird HIIT</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">40 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">09:00</span><span class="schedule-class">Liikkuvuus & Venyttely</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">12:00</span><span class="schedule-class">Power Lunch</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">30 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">17:30</span><span class="schedule-class">CrossTraining</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">50 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">19:00</span><span class="schedule-class">Spinning + Core</span><span class="schedule-trainer">Laura</span><span class="schedule-duration">55 min</span></div>
+        </div>
+        <div class="schedule-day" id="day-to">
+          <div class="schedule-item"><span class="schedule-time">07:00</span><span class="schedule-class">Morning Flow Jooga</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">50 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">10:00</span><span class="schedule-class">Seniori Fitness</span><span class="schedule-trainer">Laura</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">17:00</span><span class="schedule-class">HIIT & Burn</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">18:30</span><span class="schedule-class">Voimanosto Basics</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">60 min</span></div>
+        </div>
+        <div class="schedule-day" id="day-pe">
+          <div class="schedule-item"><span class="schedule-time">07:00</span><span class="schedule-class">Friday Burn</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">09:00</span><span class="schedule-class">Jooga & Mindfulness</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">60 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">12:00</span><span class="schedule-class">Express Core</span><span class="schedule-trainer">Laura</span><span class="schedule-duration">25 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">16:00</span><span class="schedule-class">Perjantai Party Workout</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">50 min</span></div>
+        </div>
+        <div class="schedule-day" id="day-la">
+          <div class="schedule-item"><span class="schedule-time">09:00</span><span class="schedule-class">Weekend Warrior HIIT</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">50 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">10:30</span><span class="schedule-class">Spinning Marathon</span><span class="schedule-trainer">Aleksi</span><span class="schedule-duration">60 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">12:00</span><span class="schedule-class">Jooga Restore</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">75 min</span></div>
+        </div>
+        <div class="schedule-day" id="day-su">
+          <div class="schedule-item"><span class="schedule-time">10:00</span><span class="schedule-class">Sunday Stretch</span><span class="schedule-trainer">Sanna</span><span class="schedule-duration">60 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">11:30</span><span class="schedule-class">Kehonpainotreeni Light</span><span class="schedule-trainer">Laura</span><span class="schedule-duration">45 min</span></div>
+          <div class="schedule-item"><span class="schedule-time">13:00</span><span class="schedule-class">Open Gym + Ohjausta</span><span class="schedule-trainer">Mikko</span><span class="schedule-duration">120 min</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Asiakaspalautteet</span>
+        <h2 class="section-title">Mitä asiakkaamme <span class="gradient-text">sanovat</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Paras kuntosali missä olen koskaan treenannut. Laitteet ovat huippuluokkaa ja ilmapiiri on fantastinen. Personal trainer Mikko sai minut rakastamaan treenaamista uudestaan."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <strong>Anna-Maria K.</strong>
+              <span>Pro-jäsen, 14 kk</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Aloitin Basic-paketilla ja päivitin Eliteen kuukauden jälkeen. Ravintovalmennus Lauran kanssa oli game-changer. Suosittelen kaikille!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">P</div>
+            <div>
+              <strong>Petri V.</strong>
+              <span>Elite-jäsen, 8 kk</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Ryhmäliikuntatunnit ovat parasta mitä on tapahtunut treenirutiinilleni. Aleksin HIIT-tunnit ovat koukuttavia. Olen pudottanut 12 kiloa 5 kuukaudessa!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <strong>Maria L.</strong>
+              <span>Pro-jäsen, 5 kk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE TRIAL CTA -->
+  <section class="section cta-section" id="kokeile">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Aloita muutoksesi <span class="gradient-text">tänään</span></h2>
+        <p class="cta-subtitle">Kokeile FitForce Espoota 7 päivää täysin ilmaiseksi. Ei sitoutumista, ei piilokustannuksia.</p>
+        <form class="cta-form" id="trialForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Nimi *" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Sähköposti *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Puhelin *" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <select name="interest" required>
+                <option value="" disabled selected>Mikä kiinnostaa eniten?</option>
+                <option value="pt">Personal Training</option>
+                <option value="group">Ryhmäliikunta</option>
+                <option value="nutrition">Ravintovalmennus</option>
+                <option value="online">Online-valmennus</option>
+                <option value="all">Kaikki kiinnostaa!</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block pulse-btn">
+                Varaa ilmainen kokeilu
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="cta-disclaimer">Täyttämällä lomakkeen hyväksyt tietosuojaselosteemme. Emme jaa tietojasi kolmansille osapuolille.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section location" id="yhteystiedot">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-info">
+          <span class="section-tag">Yhteystiedot</span>
+          <h2 class="section-title">Löydä <span class="gradient-text">perille</span></h2>
+          <div class="location-details">
+            <div class="location-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Osoite</strong>
+                <p>Leppävaarankatu 12, 02600 Espoo</p>
+              </div>
+            </div>
+            <div class="location-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Puhelin</strong>
+                <p><a href="tel:+358401234567">+358 40 123 4567</a></p>
+              </div>
+            </div>
+            <div class="location-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong>Sähköposti</strong>
+                <p><a href="mailto:info@fitforce.fi">info@fitforce.fi</a></p>
+              </div>
+            </div>
+            <div class="location-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong>Aukioloajat</strong>
+                <p>Ma-Pe: 06:00 - 22:00<br>La: 08:00 - 18:00<br>Su: 10:00 - 16:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.5!2d24.8127!3d60.2194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDEzJzEwLjAiTiAyNMKwNDgnNDUuNyJF!5e0!3m2!1sfi!2sfi!4v1"
+            width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
+            title="FitForce Espoo sijainti kartalla">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">F</span>
+            <span class="logo-text">FitForce<span class="logo-accent"> Espoo</span></span>
+          </a>
+          <p>Espoon monipuolisin kuntosali ja personal training -studio. Aloita muutoksesi tänään.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.58 12 19.58 12 19.58s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.45z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Palvelut</h4>
+          <ul>
+            <li><a href="#palvelut">Personal Training</a></li>
+            <li><a href="#palvelut">Ryhmäliikunta</a></li>
+            <li><a href="#palvelut">Ravintovalmennus</a></li>
+            <li><a href="#palvelut">Online-valmennus</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Tietoa</h4>
+          <ul>
+            <li><a href="#hinnat">Hinnat</a></li>
+            <li><a href="#aikataulu">Aikataulu</a></li>
+            <li><a href="#valmentajat">Valmentajat</a></li>
+            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Aukioloajat</h4>
+          <ul>
+            <li>Ma-Pe: 06:00 - 22:00</li>
+            <li>La: 08:00 - 18:00</li>
+            <li>Su: 10:00 - 16:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FitForce Espoo. Kaikki oikeudet pidätetään.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Tietosuojaseloste</a>
+          <a href="#">Käyttöehdot</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ===== NAVBAR SCROLL ===== */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* ===== MOBILE NAV ===== */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    /* ===== SMOOTH SCROLL ===== */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* ===== COUNTER ANIMATION ===== */
+    const counters = document.querySelectorAll('.stat-number');
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const duration = 2000;
+        const startTime = performance.now();
+        const updateCounter = (currentTime) => {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counter.textContent = Math.floor(eased * target);
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+        requestAnimationFrame(updateCounter);
+      });
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) statsObserver.observe(heroStats);
+
+    /* ===== SCHEDULE TABS ===== */
+    const tabs = document.querySelectorAll('.schedule-tab');
+    const days = document.querySelectorAll('.schedule-day');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        days.forEach(d => d.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('day-' + tab.dataset.day).classList.add('active');
+      });
+    });
+
+    /* ===== SCROLL REVEAL ===== */
+    const revealElements = document.querySelectorAll(
+      '.service-card, .trainer-card, .pricing-card, .transform-card, .testimonial-card, .location-item'
+    );
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    /* ===== FORM HANDLER ===== */
+    document.getElementById('trialForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Kiitos! Otamme yhteyttä pian.';
+      btn.disabled = true;
+      btn.style.background = '#00c853';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        btn.style.background = '';
+        this.reset();
+      }, 4000);
+    });
+  </script>
+</body>
+</html>
